@@ -1,9 +1,9 @@
-public class NumberDisplay {
+public class NumberDisplay extends Clock{
     protected int limit;
     protected int value;
 
 
-    public void NumberDisplay (int maxLimit) {
+    public NumberDisplay(int maxLimit) {
         value = 0;
         limit = maxLimit;
     }
