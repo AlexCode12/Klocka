@@ -1,4 +1,4 @@
-public class Clock{
+public class Clock {
 private NumberDisplay hours;
 private NumberDisplay minutes;
 private String displayString;
@@ -16,7 +16,7 @@ private String displayString;
     }
     public void timeTick () {
         minutes.increment();
-    }
+    } //Enbart struktur, måste aktiveras manuellt
 
     public void setTime(int hours, int minutes) {
         this.hours.setValue(hours);
@@ -33,4 +33,5 @@ private String displayString;
         Clock c1 = new Clock();
         System.out.println(c1.getTime());
     }
+    //PSVM-en skapar en ny klocka, för att sedan returnera getTime (displayStringen). Stuktur på den finns i updateDisplay
 }
