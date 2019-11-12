@@ -1,11 +1,12 @@
-public class Clock {
+public class Clock{
 private NumberDisplay hours;
 private NumberDisplay minutes;
 private String displayString;
 
-    public Clock() {
+    public Clock () {
         this.hours = new NumberDisplay(24);
         this.minutes = new NumberDisplay(60);
+        updateDisplay();
     }
 
     public Clock(int hours, int minutes) {
@@ -26,5 +27,10 @@ private String displayString;
     }
     private void updateDisplay() {
     displayString = hours.getDisplayValue() + ":" + minutes.getDisplayValue();
+    }
+
+    public static void main(String[] args) {
+        Clock c1 = new Clock();
+        System.out.println(c1.getTime());
     }
 }

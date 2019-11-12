@@ -1,4 +1,4 @@
-public class NumberDisplay extends Clock{
+public class NumberDisplay{
     protected int limit;
     protected int value;
 
